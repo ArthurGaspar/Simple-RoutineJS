@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyRoutine - Routine</title>
+    <link href="myroutine.css" rel="stylesheet">
+</head>
+<body>
+    <button class="main-button" id="button-index">GO BACK</button>
+    <p>Note: task lists are in decreasing priority order.</p>
+    <hr>
+
+    <button onclick="randomizeTasks()">Randomize Task Order</button>
+    <button onclick="toggleAll(true)">Toggle ON All Tasks</button>
+    <button onclick="toggleAll(false)">Toggle OFF All Tasks</button>
+    <button onclick="deleteAll()">Delete All Tasks</button>
+    <div id="task-list"></div>
+
+    <form id="task-creator">
+        <input type="text" id="task-name" placeholder="Name of the task" required>
+        <select id="task-prior" required>
+            <option value="ultra">Ultra Priority</option>
+            <option value="daily">Daily</option>
+            <option value="almostdaily">Almost Daily</option>
+            <option value="common">Weekly Common</option>
+            <option value="neutral">Weekly Neutral</option>
+            <option value="ocasional">Ocasional</option>
+        </select>
+        <input type="text" id="task-desc" placeholder="Description of the task">
+        <button type="submit">Add Task</button>
+    </form>
+    <p>Deleting all tasks and not creating a new one will reset to default!</p>
+
+    <script src="button.js"></script>
+    <script src="../index.js"></script>
+    <script src="../preload.js"></script>
+    <script src="options.js"></script>
+    <script src="../node_modules/sortablejs/Sortable.min.js"></script>
+    <script src="../tasks/database.js"></script>
+</body>
+</html>

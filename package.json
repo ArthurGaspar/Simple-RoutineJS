@@ -1,0 +1,20 @@
+{
+  "name": "routinejs",
+  "version": "1.0.0",
+  "description": "a routine app made with js",
+  "main": "index.js",
+  "scripts": {
+    "test": "txt"
+  },
+  "keywords": [
+    "routine"
+  ],
+  "author": "ice",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^26.6.2",
+    "electron-packager": "^17.1.2",
+    "sortablejs": "^1.15.0"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,198 @@
+/* GLOBAL */
+/* MAIN */
+body {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+button {
+    font-family:'Courier New', Courier, monospace;
+}
+
+input {
+    font-family:Consolas;
+}
+
+select {
+    font-family:Consolas;
+}
+
+.item:hover {
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
+
+.quest-name {
+    font-weight: bold;
+}
+
+.alert-heading {
+    width:fit-content;
+}
+
+/* MODAL AREA */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 8px;
+}
+
+#edit-modal {
+    max-width: 800vw;
+    max-height: 600vh;
+    overflow: auto;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #888;
+    cursor: pointer;
+}
+
+/* LIGHT MODE */
+/* MAIN */
+
+body.light {
+    background-color: white;
+    color: black;
+}
+
+body.light button {
+    background-color: #b495cf;
+    color:black;
+} body.light button:hover {
+    background-color: #d2bde4;
+    cursor:pointer;
+}
+
+body.light .list {
+    background-color: bisque;
+    border: 2px solid goldenrod;
+}
+
+body.light .list-item {
+    background-color: bisque;
+    border: 2px solid goldenrod;
+} body.light .list-item:hover {
+    background-color: rgb(223, 197, 161);
+}
+
+body.light .quest-due {
+    background-color: #b495cf;
+}
+
+body.light .quest-completed {
+    background-color: rgb(184, 184, 184);
+} body.light .quest-completed:hover {
+    background-color: rgb(150, 150, 150);
+}
+
+body.light .quest-completed .quest-name,
+body.light .quest-completed .quest-desc,
+body.light .quest-completed .quest-comp {
+    text-decoration: line-through; /* Add strikethrough to the text */
+    text-decoration-color:black;
+    text-decoration-thickness: 2px;
+}
+
+body.light .alert-heading {
+    background-color: rgb(141, 17, 17);
+    color:rgb(250, 208, 208);
+}
+
+body.light .delete-btn {
+    background-color:#b98a83;
+} body.light .delete-btn:hover {
+    background-color: #e4c2bd;
+}
+
+/* MODAL AREA */
+
+body.light .modal {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+body.light .modal-content {
+    background-color: #fefefe;
+}
+
+/* DARK MODE */
+/* MAIN */
+body.dark {
+    background-color: #2b2b2b;
+    color: white;
+}
+
+body.dark button {
+    background-color: #d2bde4;
+    color:black;
+} body.dark button:hover {
+    background-color: #b495cf;
+    cursor:pointer;
+}
+
+body.dark .list {
+    background-color: goldenrod;
+    border: 2px solid bisque;
+}
+
+body.dark .list-item {
+    background-color: goldenrod;
+    border: 2px solid bisque;
+} body.dark .list-item:hover {
+    background-color: rgb(185, 143, 34);
+}
+
+body.dark .quest-due {
+    background-color: #d2bde4;
+    color: black;
+}
+
+body.dark .quest-completed {
+    background-color: rgb(75, 75, 75);
+} body.dark .quest-completed:hover {
+    background-color: rgb(44, 44, 44);
+}
+
+body.dark .quest-completed .quest-name,
+body.dark .quest-completed .quest-desc,
+body.dark .quest-completed .quest-comp {
+    text-decoration: line-through; /* Add strikethrough to the text */
+    text-decoration-color:rgb(255, 255, 255);
+    text-decoration-thickness: 2px;
+}
+
+body.dark .alert-heading {
+    background-color: rgb(141, 17, 17);
+    color:rgb(250, 208, 208);
+}
+
+body.dark .delete-btn {
+    background-color:#e4c2bd;
+} body.dark .delete-btn:hover {
+    background-color: #b98a83;
+}
+
+/* MODAL AREA */
+
+body.dark .modal-content {
+    background-color: black;
+}

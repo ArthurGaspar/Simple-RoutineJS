@@ -1,0 +1,40 @@
+/* GLOBAL */
+/* MAIN */
+body {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+button {
+    font-family:'Courier New', Courier, monospace;
+}
+
+/* LIGHT MODE */
+/* MAIN */
+body.light {
+    background-color: white;
+    color: black;
+}
+
+body.light button {
+    background-color: #b495cf;
+    color:black;
+} body.light button:hover {
+    background-color: #d2bde4;
+    cursor:pointer;
+}
+
+/* DARK MODE */
+/* MAIN */
+body.dark {
+    background-color: #2b2b2b;
+    color: white;
+}
+
+body.dark button {
+    background-color: #d2bde4;
+    color:black;
+} body.dark button:hover {
+    background-color: #b495cf;
+    cursor:pointer;
+}

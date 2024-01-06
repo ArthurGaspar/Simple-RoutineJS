@@ -1,0 +1,314 @@
+/* GLOBAL */
+/* MAIN */
+body {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+button {
+    font-family:'Courier New', Courier, monospace;
+}
+
+input {
+    font-family:Consolas;
+}
+
+select {
+    font-family:Consolas;
+}
+
+.item-ultra:hover {
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
+
+.item-daily:hover {
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
+
+.item-almostdaily:hover {
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
+
+.item-common:hover {
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
+
+.item-neutral:hover {
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
+
+.item-ocasional:hover {
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
+
+.task-name {
+    font-weight: bold;
+}
+
+.alert-heading {
+    width:fit-content;
+}
+
+/* MODAL AREA */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 8px;
+}
+
+#edit-modal {
+    max-width: 800vw;
+    max-height: 600vh;
+    overflow: auto;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #888;
+    cursor: pointer;
+}
+
+/* LIGHT MODE */
+/* MAIN */
+
+body.light {
+    background-color: white;
+    color: black;
+}
+
+body.light button {
+    background-color: #b495cf;
+    color:black;
+} body.light button:hover {
+    background-color: #d2bde4;
+    cursor:pointer;
+}
+
+body.light .list-ultra {
+    background-color: bisque;
+    border: 2px solid goldenrod;
+}
+body.light .list-daily {
+    background-color: rgb(208, 255, 196);
+    border: 0.5px solid green;
+}
+body.light .list-almostdaily {
+    background-color: rgb(196, 241, 255);
+    border: 0.5px solid teal;
+}
+body.light .list-common {
+    background-color: rgb(255, 249, 196);
+    border: 0.5px solid darkkhaki;
+}
+body.light .list-neutral {
+    background-color: rgb(196, 215, 255);
+    border: 0.5px solid cornflowerblue;
+}
+body.light .list-ocasional {
+    background-color: rgb(255, 196, 196);
+    border: 0.5px solid crimson;
+}
+
+body.light .item-ultra {
+    background-color: bisque;
+    border: 2px solid goldenrod;
+} body.light .item-ultra:hover {
+    background-color: rgb(223, 197, 161);
+}
+body.light .item-daily {
+    background-color: rgb(208, 255, 196);
+    border: 0.5px solid green;
+} body.light .item-daily:hover {
+    background-color: rgb(163, 223, 161);
+}
+body.light .item-almostdaily {
+    background-color: rgb(196, 241, 255);
+    border: 0.5px solid teal;
+} body.light .item-almostdaily:hover {
+    background-color: rgb(161, 216, 223);
+}
+body.light .item-common {
+    background-color: rgb(255, 249, 196);
+    border: 0.5px solid darkkhaki;
+} body.light .item-common:hover {
+    background-color: rgb(223, 214, 161);
+}
+body.light .item-neutral {
+    background-color: rgb(196, 215, 255);
+    border: 0.5px solid cornflowerblue;
+} body.light .item-neutral:hover {
+    background-color: rgb(161, 178, 223);
+}
+body.light .item-ocasional {
+    background-color: rgb(255, 196, 196);
+    border: 0.5px solid crimson;
+} body.light .item-ocasional:hover {
+    background-color: rgb(223, 161, 161);
+}
+
+body.light .task-completed {
+    background-color: rgb(184, 184, 184);
+} body.light .task-completed:hover {
+    background-color: rgb(150, 150, 150);
+}
+
+body.light .task-completed .task-name,
+body.light .task-completed .task-desc,
+body.light .task-completed .task-props {
+    text-decoration: line-through; /* Add strikethrough to the text */
+    text-decoration-color:black;
+    text-decoration-thickness: 2px;
+}
+
+body.light .alert-heading {
+    background-color: rgb(141, 17, 17);
+    color:rgb(250, 208, 208);
+}
+
+body.light .delete-btn {
+    background-color:#b98a83;
+} body.light .delete-btn:hover {
+    background-color: #e4c2bd;
+}
+
+/* MODAL AREA */
+
+body.light .modal {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+body.light .modal-content {
+    background-color: #fefefe;
+}
+
+/* DARK MODE */
+/* MAIN */
+body.dark {
+    background-color: #2b2b2b;
+    color: white;
+}
+
+body.dark button {
+    background-color: #d2bde4;
+    color:black;
+} body.dark button:hover {
+    background-color: #b495cf;
+    cursor:pointer;
+}
+
+body.dark .list-ultra {
+    background-color: goldenrod;
+    border: 2px solid bisque;
+}
+body.dark .list-daily {
+    background-color: green;
+    border: 0.5px solid rgb(208, 255, 196);
+}
+body.dark .list-almostdaily {
+    background-color: teal;
+    border: 0.5px solid rgb(196, 241, 255);
+}
+body.dark .list-common {
+    background-color: darkkhaki;
+    border: 0.5px solid rgb(255, 249, 196);
+}
+body.dark .list-neutral {
+    background-color: cornflowerblue;
+    border: 0.5px solid rgb(196, 215, 255);
+}
+body.dark .list-ocasional {
+    background-color: crimson;
+    border: 0.5px solid rgb(255, 196, 196);
+}
+
+body.dark .item-ultra {
+    background-color: goldenrod;
+    border: 2px solid bisque;
+} body.dark .item-ultra:hover {
+    background-color: rgb(185, 143, 34);
+}
+body.dark .item-daily {
+    background-color: green;
+    border: 0.5px solid rgb(208, 255, 196);
+} body.dark .item-daily:hover {
+    background-color: rgb(0, 99, 0);
+}
+body.dark .item-almostdaily {
+    background-color: teal;
+    border: 0.5px solid rgb(196, 241, 255);
+} body.dark .item-almostdaily:hover {
+    background-color: rgb(0, 102, 102);
+}
+body.dark .item-common {
+    background-color: darkkhaki;
+    border: 0.5px solid rgb(255, 249, 196);
+} body.dark .item-common:hover {
+    background-color: rgb(172, 167, 96);
+}
+body.dark .item-neutral {
+    background-color: cornflowerblue;
+    border: 0.5px solid rgb(196, 215, 255);
+} body.dark .item-neutral:hover {
+    background-color: rgb(88, 132, 214);
+}
+body.dark .item-ocasional {
+    background-color: crimson;
+    border: 0.5px solid rgb(255, 196, 196);
+} body.dark .item-ocasional:hover {
+    background-color: rgb(194, 18, 53);
+}
+
+body.dark .task-completed {
+    background-color: rgb(75, 75, 75);
+} body.dark .task-completed:hover {
+    background-color: rgb(44, 44, 44);
+}
+
+body.dark .task-completed .task-name,
+body.dark .task-completed .task-desc,
+body.dark .task-completed .task-props {
+    text-decoration: line-through; /* Add strikethrough to the text */
+    text-decoration-color:rgb(255, 255, 255);
+    text-decoration-thickness: 2px;
+}
+
+body.dark .alert-heading {
+    background-color: rgb(141, 17, 17);
+    color:rgb(250, 208, 208);
+}
+
+body.dark .delete-btn {
+    background-color:#e4c2bd;
+} body.dark .delete-btn:hover {
+    background-color: #b98a83;
+}
+
+/* MODAL AREA */
+
+body.dark .modal-content {
+    background-color: black;
+}
