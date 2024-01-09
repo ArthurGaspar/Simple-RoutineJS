@@ -1,5 +1,5 @@
 {
-  "name": "routinejs",
+  "name": "@arthurgaspar/routinejs",
   "version": "1.0.0",
   "description": "a routine app made with js",
   "main": "index.js",
